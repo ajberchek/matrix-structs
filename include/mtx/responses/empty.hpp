@@ -10,10 +10,10 @@ namespace mtx {
 namespace responses {
 
 //Used to represent empty responses
-struct Null{};
+struct Empty{};
 
 void
-from_json(const nlohmann::json &obj, Null &response);
+from_json(const nlohmann::json &obj, Empty &response);
 
 }
 }

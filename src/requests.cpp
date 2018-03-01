@@ -78,9 +78,9 @@ to_json(json &obj, const Login &request)
         obj["type"] = request.type;
 }
 
-//Provides a Null object functionality for a request with an empty body
+//Provides a functionality to serialize a request with an empty body
 void
-to_json(json &obj, const Null &request)
+to_json(json &obj, const Empty &request)
 {
 	//Cast to void on the stack to prevent compiler complaints about unused variables
 	(void)obj;
