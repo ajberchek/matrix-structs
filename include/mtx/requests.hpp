@@ -82,5 +82,11 @@ struct Login
 
 void
 to_json(json &obj, const Login &request);
+
+struct Null {};
+
+void
+to_json(json &obj, const Null &request);
+
 }
 }

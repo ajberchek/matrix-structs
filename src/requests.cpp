@@ -77,5 +77,16 @@ to_json(json &obj, const Login &request)
         obj["user"] = request.user;
         obj["type"] = request.type;
 }
+
+//Provides a Null object functionality for a request with an empty body
+void
+to_json(json &obj, const Null &request)
+{
+	//Cast to void on the stack to prevent compiler complaints about unused variables
+	(void)obj;
+	(void)request;
+	//TODO Set obj to json::null or the equivalent for that library
+}
+
 }
 }

@@ -4,6 +4,7 @@
 
 #include "responses/create_room.hpp"
 #include "responses/login.hpp"
+#include "responses/null.hpp"
 #include "responses/messages.hpp"
 #include "responses/profile.hpp"
 #include "responses/sync.hpp"
