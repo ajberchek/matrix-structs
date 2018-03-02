@@ -9,13 +9,13 @@
 namespace mtx {
 namespace responses {
 
-//Used to represent empty responses
-struct Empty{};
+// Used to represent empty responses
+struct Empty
+{};
 
 void
 from_json(const nlohmann::json &obj, Empty &response);
 
 using Logout = Empty;
-
 }
 }
