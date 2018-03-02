@@ -88,5 +88,7 @@ struct Empty {};
 void
 to_json(json &obj, const Empty &request);
 
+using Logout = Empty;
+
 }
 }

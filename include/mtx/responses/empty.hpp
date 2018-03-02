@@ -15,5 +15,7 @@ struct Empty{};
 void
 from_json(const nlohmann::json &obj, Empty &response);
 
+using Logout = Empty;
+
 }
 }
