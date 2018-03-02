@@ -80,10 +80,8 @@ to_json(json &obj, const Login &request)
 
 //Provides a functionality to serialize a request with an empty body
 void
-to_json(json &obj, const Empty &request)
+to_json(json &obj, const Empty&)
 {
-	//Cast to void on the stack to prevent compiler complaints about unused variables
-	(void)request;
 	obj.clear();
 }
 
