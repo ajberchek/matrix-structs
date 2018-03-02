@@ -83,9 +83,8 @@ void
 to_json(json &obj, const Empty &request)
 {
 	//Cast to void on the stack to prevent compiler complaints about unused variables
-	(void)obj;
 	(void)request;
-	//TODO Set obj to json::null or the equivalent for that library
+	obj.clear();
 }
 
 }
