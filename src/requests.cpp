@@ -81,8 +81,7 @@ to_json(json &obj, const Login &request)
 void
 to_json(json &obj, const DisplayName &request)
 {
-        if (!request.displayname.empty())
-                obj["displayname"] = request.displayname;
+        obj["displayname"] = request.displayname;
 }
 
 //Provides a functionality to serialize a request with an empty body
