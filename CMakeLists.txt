@@ -100,6 +100,10 @@ set(SRC
     src/responses/version.cpp)
 
 add_library(${LIBRARY_NAME} ${SRC})
+install(TARGETS ${LIBRARY_NAME}
+    ARCHIVE DESTINATION lib
+    LIBRARY DESTINATION lib
+    RUNTIME DESTINATION bin)
 
 if (BUILD_TESTS)
     enable_testing()
