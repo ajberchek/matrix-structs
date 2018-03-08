@@ -18,5 +18,6 @@ from_json(const nlohmann::json &, Empty &);
 
 using Logout      = Empty;
 using DisplayName = Empty;
+using RoomInvite  = Empty;
 }
 }
