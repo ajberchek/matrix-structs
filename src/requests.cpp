@@ -79,6 +79,12 @@ to_json(json &obj, const Login &request)
 }
 
 void
+to_json(json &obj, const AvatarUrl &request)
+{
+        obj["avatar_url"] = request.avatar_url;
+}
+
+void
 to_json(json &obj, const DisplayName &request)
 {
         obj["displayname"] = request.displayname;

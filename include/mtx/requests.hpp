@@ -83,6 +83,15 @@ struct Login
 void
 to_json(json &obj, const Login &request);
 
+//! Request payload for the `POST /_matrix/client/r0/profile/{userId}/avatar_url` endpoint.
+struct AvatarUrl
+{
+        std::string avatar_url;
+};
+
+void
+to_json(json &obj, const AvatarUrl &request);
+
 //! Request payload for the `PUT /_matrix/client/r0/profile/{userId}/displayname` endpoint.
 struct DisplayName
 {
